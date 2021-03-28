@@ -1,0 +1,89 @@
+body {
+ font-family: Open Sans,Courgette Regular, sans-serif;
+
+  background-color: #EEB6B4;
+}
+#slogan img{
+  height: auto;
+  width: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 27%;
+  position: center;
+  padding: 0;
+}
+.respmenu img{
+  position: right;
+  width: 47px;
+  height: 42px;
+}
+ 
+.respmenu a { 
+  color: #000;
+  display: none;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 2px solid #EEB6B4;
+  max-width: 200px;
+  background: #EEB6B4;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+  float: top;
+}
+.respmenu a:hover{
+  color:#fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 2px solid #EEB6B4;
+  max-width: 200px;
+  background: #B0B0C8;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+  float: top;
+}
+
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  position: absolute;  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;  
+}
+ 
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 48px;
+  pointer-events: none;
+}
+ 
+.respmenu input[type="checkbox"] {
+  opacity: 0; 
+}
+ 
+.respmenu {
+  color: white;
+  position: relative; 
+  background: #EEB6B4;
+  min-height: 48px;
+}
+ 
+.respmenu nav {
+  display: none;
+}
+ 
+.respmenu input:checked ~ nav {
+  display: block;
+}
+ 
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+ 
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
